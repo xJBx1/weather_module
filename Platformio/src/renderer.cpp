@@ -235,9 +235,9 @@ void initDisplay()
   display.setTextSize(1);
   display.setTextColor(GxEPD_BLACK);
   display.setTextWrap(false);
-  display.fillScreen(GxEPD_WHITE);
+  //display.fillScreen(GxEPD_WHITE);
   display.setFullWindow();
-  // display.firstPage(); // use paged drawing mode, sets fillScreen(GxEPD_WHITE)
+  display.firstPage(); // use paged drawing mode, sets fillScreen(GxEPD_WHITE)
   return;
 } // end initDisplay
 
