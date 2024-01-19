@@ -43,8 +43,8 @@
   #define DISP_WIDTH  800
   #define DISP_HEIGHT 480
   #include <GxEPD2_7C.h>
-  extern GxEPD2_7C < GxEPD2_730c_GDEY073D46, GxEPD2_730c_GDEY073D46::HEIGHT / 6 > display
-                                                (GxEPD2_730c_GDEY073D46(/*CS=D8*/ 5, /*DC=D3*/ 22, /*RST=D4*/ 21, /*BUSY=D2*/ 4));
+  extern GxEPD2_7C<GxEPD2_730c_GDEY073D46,
+            GxEPD2_730c_GDEY073D46::HEIGHT / 6> display;
 #endif
 #ifdef DISP_BW_V1
   #define DISP_WIDTH  640

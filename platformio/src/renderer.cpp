@@ -56,7 +56,7 @@
 #endif
 #ifdef DISP_7C_F
   GxEPD2_7C<GxEPD2_730c_GDEY073D46,
-            GxEPD2_730c_GDEY073D46::HEIGHT / 4> display(
+            GxEPD2_730c_GDEY073D46::HEIGHT / 6> display(
     GxEPD2_730c_GDEY073D46(PIN_EPD_CS,
                            PIN_EPD_DC,
                            PIN_EPD_RST,
