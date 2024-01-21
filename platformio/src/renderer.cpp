@@ -56,7 +56,7 @@
 #endif
 #ifdef DISP_7C_F
   GxEPD2_7C<GxEPD2_730c_GDEY073D46,
-            GxEPD2_730c_GDEY073D46::HEIGHT / 6> display(
+            GxEPD2_730c_GDEY073D46::HEIGHT / 4> display(
     GxEPD2_730c_GDEY073D46(PIN_EPD_CS,
                            PIN_EPD_DC,
                            PIN_EPD_RST,
@@ -225,12 +225,12 @@ void drawMultiLnString(int16_t x, int16_t y, const String &text,
  */
 void initDisplay()
 {
-  SPI.begin(PIN_EPD_SCK,
-            PIN_EPD_MISO,
-            PIN_EPD_MOSI,
-            PIN_EPD_CS);
+  // SPI.begin(PIN_EPD_SCK,
+  //           PIN_EPD_MISO,
+  //           PIN_EPD_MOSI,
+  //           PIN_EPD_CS);
   
-  display.init(115200, true, 2, false);
+  display.init(115200, true, 20 , false);
   display.setRotation(0);
   display.setTextSize(1);
   display.setTextColor(GxEPD_BLACK);
@@ -519,7 +519,7 @@ void drawCurrentConditions(const owm_current_t &current,
   }
 
   // moon cycle
-  display.setFont(&FONT_12pt8b);
+  display.setFont(&FONT_9pt8b);
   drawString(48, 204 + 17 / 2 + (48 + 8) * 4 + 48 / 2, getMoonPhase(moonPhase), LEFT);
 #endif // defined(DISP_BW_V2) || defined(DISP_3C_B) || defined(DISP_7C_F)
 
