@@ -511,7 +511,7 @@ const char *getMoonPhase(float phase){
   } else if (phase<0.5)
   {
     return "Waxing Gibbous";
-  } else if (0.5)
+  } else if (phase == 0.5)
   {
     return "Full Moon";
   } else if (phase<0.75)

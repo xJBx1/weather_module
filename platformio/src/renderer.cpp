@@ -230,7 +230,7 @@ void initDisplay()
   //           PIN_EPD_MOSI,
   //           PIN_EPD_CS);
   
-  display.init(115200, true, 20 , false);
+  display.init(115200, false, 20, false);
   display.setRotation(0);
   display.setTextSize(1);
   display.setTextColor(GxEPD_BLACK);

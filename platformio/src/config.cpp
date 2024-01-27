@@ -101,7 +101,7 @@ const unsigned long NTP_TIMEOUT = 20000; // ms
 const long SLEEP_DURATION = 60;
 // If BED_TIME == WAKE_TIME, then this battery saving feature will be disabled.
 // (range: [0-23])
-const int BED_TIME  = 19; // Last update at 00:00 (midnight) until WAKE_TIME.
+const int BED_TIME  = 20; // Last update at 00:00 (midnight) until WAKE_TIME.
 const int WAKE_TIME = 05; // Hour of first update after BED_TIME, 06:00.
 
 // HOURLY OUTLOOK GRAPH
